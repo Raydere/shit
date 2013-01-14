@@ -1,3 +1,5 @@
+#BOOKMARK: page 54
+
 class IIDXPlayer
   attr_reader :id, :djName, :danRank
   def initialize(id, djName, danRank)
