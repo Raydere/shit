@@ -1,7 +1,10 @@
-#BOOKMARK: page 54
+# raymoo learns objects
+
+# BOOKMARK: page 56
 
 class IIDXPlayer
   attr_reader :id, :djName, :danRank
+  attr_accessor :danRank # OH GOD WHAT AM I DOING
   def initialize(id, djName, danRank)
     @id = id
     @djName = djName
@@ -39,7 +42,8 @@ sakuya = IIDXPlayer.new(41935859, "SAKUYA", -5)
 p sakuya
 
 puts "holy shit #{reimu.djName} cleared the Safari"
-reimu.promote(7)
+# reimu.promote(7)
+reimu.danRank = 7
 puts "#{reimu.djName} is now #{reimu.danPrintableFormat}"
 
 puts reimu # reimu no
